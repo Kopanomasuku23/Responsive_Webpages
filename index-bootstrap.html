@@ -16,12 +16,12 @@
     <br>
     <div class="row">
       <div class="col-md-6 text-center">
-        <h1>{{user.fullName}}</h1>
+        <h1>{{data.user.fullName}}</h1>
       </div>
 
       <div class="col-md-6 text-center">
         <figure>
-        <img src="{{user.photo}}" class="rounded col-10" alt="...">
+        <img src="{{data.user.photo}}" class="rounded col-10" alt="...">
       </div>
     </div>
 <br>
@@ -34,7 +34,7 @@
       <h1>{{city.name}}</h1>
       <div class="col-md-5">
       
-        <img src="{{city.photo}}" class="rounded col-12" alt="...">
+        <img src="{{data.city.photo}}" class="rounded col-12" alt="...">
 
       </div>
 
@@ -70,7 +70,7 @@
             </tr>
           </thead>
           <tbody>
-            {{#each foreignLanguage.phrases}}
+            {{#each data.foreignLanguage.phrases}}
             <tr>
               <td>{{englishPhrase}}</td>
               <td>{{foreignLanguage}}</td>
@@ -93,7 +93,7 @@
 
       <div class="row">
 
-        {{#each favouriteSubjects}}
+        {{#each data.favouriteSubjects}}
         <div class=" text-bg-secondary p-3 card mb-3 m-1" style="max-width: 540px;">
           <div class="row g-0">
           
