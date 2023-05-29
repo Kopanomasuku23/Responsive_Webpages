@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
-<body >
+<nav>
+  <div class="nav-wrapper">
+      <a href="{{pages.homePage}}" class="btn btn-primary">HOME</a>
+      <a href="{{pages.logoPage}}" class="btn btn-primary">LOGO</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="btn btn-primary">Announcement</a>{{announcement}}</li>
+          <li><a href="">Contact</a>{{contact}}</li>
+      </ul>
+  </div>
+</nav>
+
+
+<body class="card-panel teal lighten-2">
    
     
     <main class="container">
@@ -79,7 +91,9 @@
 
             </div>
         </div>
-
+        <br>
+        <div class="text-center text-bg-secondary p-3 card mb-3 m-1">
+          <hr>
 
 
         <br>
@@ -95,7 +109,7 @@
           {{#each data.favouriteSubjects}}
 
         <div class="col s12 m6">
-          <div class="card #757575 grey darken-1">
+          <div class="card #c51162 pink accent-4">
             <div class="card-content white-text">
               <span class="card-title">{{name}}</span>
               <p>{{description}}</p>
