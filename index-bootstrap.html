@@ -31,7 +31,7 @@
 
 
     <div class="row text-bg-secondary">
-      <h1>{{city.name}}</h1>
+      <h1>{{data.city.name}}</h1>
       <div class="col-md-5">
       
         <img src="{{data.city.photo}}" class="rounded col-12" alt="...">
@@ -40,7 +40,7 @@
 
       <div class="col-md-7 ">
         <p>
-          {{city.description}}
+          {{data.city.description}}
         </p>
       </div>
 
@@ -51,8 +51,9 @@
 <br>
       <div class="text-center">
         <br>
+
         <h1>Foreign Language to learn:</h1>
-        <h2>{{foreignLanguage.language}}</h>
+        <h2>{{data.foreignLanguage.language}}</h>
       </div>
 
 
@@ -82,8 +83,8 @@
       <br>
       <div class="text-center text-bg-secondary p-3 card mb-3 m-1">
         <hr>
-      <h1>{{course}}</h1>
-      <h2>{{institution}}</h2>
+      <h1>{{data.course}}</h1>
+      <h2>{{data.institution}}</h2>
       <br>
       <hr>
       <h3>Favourite Subjects</h3>
@@ -96,9 +97,9 @@
         {{#each data.favouriteSubjects}}
         <div class=" text-bg-secondary p-3 card mb-3 m-1" style="max-width: 540px;">
           <div class="row g-0">
-          
+            <div class="col-md-8 m-2">
             <img src="{{photo}}" class="img-fluid rounded-start" alt="">
-            <div class="col-md-12 m-2">
+            
               <div class="card-body">
                 <h5 class="card-title">{{name}}</h5>
                 <hr>
